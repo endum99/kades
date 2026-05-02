@@ -60,6 +60,9 @@ body {
   background-position: center;
   text-align: center;
 }
+#profil img {
+  width: 300px;
+}
 
 /* vision */
 #pesan {
