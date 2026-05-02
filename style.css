@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 #profil img {
-  width: 300px;
+  width: 250px;
 }
 
 /* vision */
@@ -108,7 +108,7 @@ body {
   gap: 20px;
 }
 #foto img {
-  width: 300px;
+  width: 250px;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -129,7 +129,7 @@ body {
   gap: 20px;
 }
 #video img {
-  width: 300px;
+  width: 250px;
   border: 2px solid black;
   border-radius: 10px;
   margin-bottom: 5px;
