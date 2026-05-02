@@ -111,7 +111,7 @@ body {
 
 /* video */
 #video {
-  margin: 20px 20px 0px 20px;
+  margin: 20px 20px 20px 20px;
   padding: 20px;
   background-image: url(bg/bg2.jpg);
   background-repeat: no-repeat;
@@ -141,23 +141,4 @@ body {
 #video a:hover {
   background-color: red;
   color: white;
-}
-
-/* upload */
-#upload {
-  background-image: url(bg/bg2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 20px 20px 20px 20px;
-  text-align: center;
-  padding: 20px;
-}
-#upload a {
-  color: black;
-  background: white;
-  text-decoration: none;
-  padding: 5px 8px;
-  border: 2px solid black;
-  border-radius: 5px;
 }
