@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #000;
+  font-family: "Lora", serif;
+}
+
+/* navigasi */
+#nav {
+  position: fixed;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+#nav a {
+  color: black;
+  text-decoration: none;
+  margin: 3px 5px;
+}
+
+.profil {
+  top: 26px;
+  right: 30px;
+}
+.pesan {
+  top: 86px;
+  right: 30px;
+}
+.foto {
+  top: 146px;
+  right: 30px;
+}
+.video {
+  top: 206px;
+  right: 30px;
+}
+
+.musik {
+  top: 266px;
+  right: 30px;
+}
+.upload {
+  top: 326px;
+  right: 30px;
+}
+
+/* isi */
+.container {
+  padding: 20px;
+}
+
+/* profil */
+#profil {
+  padding-top: 20px;
+  background-image: url(bg/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* vision */
+#pesan {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-image: url(bg/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pesan button {
+  margin: 10px;
+  font-weight: bold;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+}
+#pesan button:hover {
+  background: red;
+}
+#pesan p {
+  margin-bottom: 5px;
+}
+
+/* foto */
+#foto {
+  margin: 0px 20px 0px 20px;
+  padding: 20px;
+  background-image: url(bg/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#foto img {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* video */
+#video {
+  margin: 20px 20px 0px 20px;
+  padding: 20px;
+  background-image: url(bg/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#video img {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+#video a {
+  text-decoration: none;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 6px;
+}
+#video a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* upload */
+#upload {
+  background-image: url(bg/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  padding: 20px;
+}
+#upload a {
+  color: black;
+  background: white;
+  text-decoration: none;
+  padding: 5px 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+}

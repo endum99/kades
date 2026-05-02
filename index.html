@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H. Mursan, SE</title>
+    <link rel="shortcut icon" href="bg/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="profil" id="nav"><a href="#profil">Profil</a></div>
+    <div id="nav" class="pesan"><a href="#pesan">Vision</a></div>
+    <div id="nav" class="foto"><a href="#foto">Foto</a></div>
+    <div id="nav" class="video"><a href="#video">Video</a></div>
+    <div class="musik" id="nav">
+      <audio id="bgMusic" loop>
+        <source src="audio/audio.mp3" type="audio/mpeg" />
+      </audio>
+      <button id="musicToggle">🔊 Musik</button>
+    </div>
+    <div class="upload" id="nav"><a href="#upload">Upload</a></div>
+
+    <div class="container">
+      <!-- profil -->
+      <div id="profil">
+        <img src="bg/mursan.png" alt="h.mursan" />
+      </div>
+
+      <!-- pesan -->
+      <div class="pesan" id="pesan">
+        <p id="demo"></p>
+        <button onclick="typeWriter()">Vision</button>
+      </div>
+    </div>
+
+    <!-- foto -->
+    <div id="foto">
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+      <div class="img"><img src="foto/f1.jpg" alt="" /></div>
+    </div>
+
+    <!-- video -->
+    <div id="video">
+      <div class="img">
+        <img src="foto/f1.jpg" alt=""> <br>
+        <a href="https://www.youtube.com/watch?v=VUwy7PG63w8&list=RDVUwy7PG63w8&start_radio=1" target="_blank">Lihat Video</a>
+      </div>
+
+      <div class="img">
+        <img src="foto/f1.jpg" alt=""> <br>
+        <a href="https://www.youtube.com/watch?v=VUwy7PG63w8&list=RDVUwy7PG63w8&start_radio=1" target="_blank">Lihat Video</a>
+      </div>
+
+      <div class="img">
+        <img src="foto/f1.jpg" alt=""> <br>
+        <a href="https://www.youtube.com/watch?v=VUwy7PG63w8&list=RDVUwy7PG63w8&start_radio=1" target="_blank">Lihat Video</a>
+      </div>
+    </div>
+
+    <!-- upload -->
+    <div id="upload">
+      <a href="https://forms.gle/t1ufgZViKTwv9Df99" target="_blank">Upload</a>
+    </div>
+
+    <!-- vision animation -->
+    <script>
+      var i = 0;
+      var txt =
+        "Melayani Sepenuh Hati, Maju Desanya, Makmur Rakyatnya, Pantai Makmur Maju Terus.";
+      var speed = 100;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+
+    <!-- audio -->
+    <script>
+      const bgMusic = document.getElementById("bgMusic");
+      const toggleBtn = document.getElementById("musicToggle");
+
+      let isPlaying = false;
+
+      toggleBtn.addEventListener("click", () => {
+        if (isPlaying) {
+          bgMusic.pause();
+          toggleBtn.textContent = "🔇 Musik";
+        } else {
+          bgMusic.play();
+          toggleBtn.textContent = "🔊 Musik";
+        }
+        isPlaying = !isPlaying;
+      });
+
+      // Optional: Prevent form submission reload
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Pesan Anda berhasil dikirim!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
